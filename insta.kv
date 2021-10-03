@@ -1,0 +1,196 @@
+
+MDBoxLayout:
+	orientation: 'vertical'
+	# MDToolbar:
+	# 	title: 'Instagram'
+	# 	md_bg_color: .2,.2,.2,1/4
+
+	MDBottomNavigation:
+
+		MDBottomNavigationItem:
+			name: 'tela1'
+			title: 'Home'
+			icon: 'home'
+			
+
+			MDBoxLayout:
+				orientation: 'vertical'
+				padding: 0, 0
+				ScrollView:
+					padding: 0, 0
+					spacing: 0, 0
+					MDList:
+						MDGridLayout:
+							rows: 1
+							width: '50sp'
+							adaptive_height: True
+							IconLeftWidget:
+								icon: 'language-python'
+							MDLabel:
+								text: 'chass_tricks'
+							MDIconButton:
+								icon: 'dots-vertical'							
+						Image:
+
+							source: 'foto6.jpg'
+							size_hint_y: None
+					        height: self.texture_size[1]
+					        size: 300, 300
+					        size_hint_x: None
+					        width: root.width
+					    
+						MDGridLayout:
+							adaptive_size: True
+							rows: 1
+							collums: 3
+							MDIconButton: 
+								icon: 'heart-outline'
+							MDIconButton: 
+								icon: 'comment-outline'
+							MDIconButton: 
+								icon: 'send-outline'
+
+						FloatLayout:
+							MDIconButton: 
+								icon: 'bookmark-outline'
+								pos_hint: {'x': .8, 'y': .5}
+						MDBoxLayout:
+							orientation: 'vertical'
+							FloatLayout:
+								MDLabel:
+									text: 'Curtido por [b]slimer[/b] e outras pessoas'
+									markup: True
+									pos_hint: {'x': .05, 'y': .1}
+
+							FloatLayout:
+								
+								MDIconButton:
+									icon: 'emoticon-happy-outline'
+									pos_hint: {'y': .1, 'x': .5}
+							
+								
+								
+						
+						
+						MDGridLayout:
+							rows: 1
+							width: '50sp'
+							adaptive_height: True
+							IconLeftWidget:
+								icon: 'language-python'
+							MDLabel:
+								text: 'asus_oficial'
+							MDIconButton:
+								icon: 'dots-vertical'
+
+					    Image:
+							source: 'foto3.jpg'
+							size_hint_y: None
+					        height: self.texture_size[1]
+					        size: 300, 300
+					    
+						MDGridLayout:
+							adaptive_size: True
+							rows: 1
+							collums: 3
+							MDIconButton: 
+								icon: 'heart-outline'
+							MDIconButton: 
+								icon: 'comment-outline'
+							MDIconButton: 
+								icon: 'send-outline'
+						FloatLayout:
+							MDIconButton: 
+								icon: 'bookmark-outline'
+								pos_hint: {'x': .8, 'y': .5}
+
+						MDBoxLayout:
+							orientation: 'vertical'
+							FloatLayout:
+								MDLabel:
+									text: 'Curtido por [b]slimer[/b] e outras pessoas'
+									markup: True
+									pos_hint: {'x': .05, 'y': .1}
+
+
+
+
+						MDGridLayout:
+							rows: 1
+							width: '50sp'
+							adaptive_height: True
+							IconLeftWidget:
+								icon: 'language-python'
+							MDLabel:
+								text: 'tech666'
+							MDIconButton:
+								icon: 'dots-vertical'
+
+						
+					    Image:
+							source: 'foto4.jpg'
+							size_hint_y: None
+					        height: self.texture_size[1]
+					        size: 300, 300
+					    
+						MDGridLayout:
+							adaptive_size: True
+							rows: 1
+							collums: 3
+							MDIconButton: 
+								icon: 'heart-outline'
+							MDIconButton: 
+								icon: 'comment-outline'
+							MDIconButton: 
+								icon: 'send-outline'
+						FloatLayout:
+							MDIconButton: 
+								icon: 'bookmark-outline'
+								pos_hint: {'x': .8, 'y': .5}
+
+						MDBoxLayout:
+							orientation: 'vertical'
+							FloatLayout:
+								MDLabel:
+									text: 'Curtido por [b]slimer[/b] e outras pessoas'
+									markup: True
+									pos_hint: {'x': .05, 'y': .1}
+
+
+		MDBottomNavigationItem:
+			name: 'tela2'
+			title: 'search'
+			icon: 'magnify'
+
+			MDGridLayout:
+				collums: 2
+				rows: 1
+				adaptive_height: True
+				Image:
+					source: 'foto1.jpg'
+				Image:
+					source: 'foto2.jpg'
+
+		MDBottomNavigationItem:
+			name: 'tela3'
+			title: 'new'
+			icon: 'plus-circle-outline'
+			MDLabel:
+				text: 'Nova Publicação'
+				halign: 'center'
+
+		MDBottomNavigationItem:
+			name: 'tela4'
+			title: 'likes'
+			icon: 'heart-outline'
+			MDLabel:
+				text: 'Curtidas'
+				halign: 'center'
+
+		MDBottomNavigationItem:
+			name: 'tela5'
+			title: 'perfil'
+			icon: 'account'
+			MDLabel:
+				text: 'Conta'
+				halign: 'center'
